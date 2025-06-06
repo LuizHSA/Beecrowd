@@ -74,3 +74,105 @@
 #     print(f'QUADRADO: {b**2:.3f}') 
 #     print(f'RETANGULO: {a*b:.3f}')
 # doze()
+
+# def treze():
+    
+#     a, b, c = input().split()
+#     a, b, c = int(a), int(b), int(c)
+    
+#     def maiorAB(a, b): 
+#         resultado= (a+b + abs(a-b)) /2
+#         return int(resultado)
+    
+#     maior = maiorAB(a, b)
+#     maior = maiorAB(maior, c)
+#     print(f'{maior} eh o maior')
+# treze()
+
+# def quatorze():
+#     a = int(input())
+#     b = float(input())
+#     print(f'{a/b:.3f} km/l')
+# quatorze()
+
+# def quinze():
+#     x1, y1 = input().split()
+#     x1, y1 = float(x1), float(y1)
+#     x2, y2 = input().split()
+#     x2, y2 = float(x2), float(y2)
+#     distancia = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+#     print(f'{distancia:.4f}')
+# quinze()
+
+# def dezesseis():
+#     a = int(input())
+#     print(f'{a*2} minutos')
+# dezesseis()  
+
+# def dezessete():
+#     a = int(input())
+#     b = int(input())
+#     distancia = a * b
+#     print(f'{distancia/12:.3f}')
+# dezessete()  
+
+# def dezoito():
+#     valor = int(input())
+#     notas = [100, 50, 20, 10, 5, 2, 1]
+#     print(valor)
+#     def decompor(valor,notas):
+#         for i in notas:
+#             quantidade = valor // i
+#             valor= valor - quantidade * i
+#             print(f'{quantidade} nota(s) de R$ {i},00')
+#     decompor(valor, notas)
+# dezoito()
+
+# def dezenove():
+#     a= int(input())
+#     tempos =[3600,60,1]
+#     tempos2=[]
+    
+#     def decompor(a, tempos):
+#         for i in tempos:
+#             quantidade = a//i
+#             a -= quantidade *i
+#             tempos2.append(quantidade)
+#     decompor(a, tempos)        
+#     print(f'{tempos2[0]}:{tempos2[1]}:{tempos2[2]}')    
+    
+# dezenove()    
+
+# def vinte():
+
+#     a = int(input())
+#     tempos = [365, 30,1]
+#     prints = [' ano(s)', ' mes(es)', ' dia(s)']
+#     def decompor(a, tempos,prints):
+#         for i in tempos:
+#             quantidade = a//i
+#             a -= quantidade *i
+#             print(f'{quantidade}{prints[tempos.index(i)]}')
+#     decompor(a, tempos,prints)
+# vinte()
+
+# def vinteUm():
+#     valor = float(input())
+#     total_centavos = round(valor * 100)  
+    
+#     notas = [10000, 5000, 2000, 1000, 500, 200]  
+#     moedas = [100, 50, 25, 10, 5, 1]             
+
+#     print('NOTAS:')
+#     for nota in notas:
+#         quantidade = total_centavos // nota
+#         total_centavos %= nota  
+#         print(f'{quantidade} nota(s) de R$ {nota/100:.2f}')
+
+#     print('MOEDAS:')
+#     for moeda in moedas:
+#         quantidade = total_centavos // moeda
+#         total_centavos %= moeda
+#         print(f'{quantidade} moeda(s) de R$ {moeda/100:.2f}')
+
+# vinteUm()
