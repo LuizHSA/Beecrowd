@@ -176,3 +176,51 @@
 #         print(f'{quantidade} moeda(s) de R$ {moeda/100:.2f}')
 
 # vinteUm()
+
+# def trintaCinco():
+#     a, b, c, d = map(int, input().split())
+#     if b > c and d > a and (c + d) > (a + b) and c > 0 and d > 0 and a % 2 == 0:
+#         print('Valores aceitos')    
+#     else:
+#         print('Valores nao aceitos')
+# trintaCinco()
+
+# import math
+
+# def trintaSeis() :
+#     A, B, C = map(float, input().split())
+    
+#     delta = B**2 - 4*A*C
+    
+#     if A == 0 or delta < 0:
+#         print("Impossivel calcular")
+#     else:
+        
+#         raiz_delta = math.sqrt(delta)
+#         R1 = (-B + raiz_delta) / (2*A)
+#         R2 = (-B - raiz_delta) / (2*A)
+        
+#         print(f"R1 = {R1:.5f}")
+#         print(f"R2 = {R2:.5f}")
+
+# trintaSeis() 
+
+# def trintaSete():
+#     a = float(input())
+#     if a < 0 or a >100:
+#         print('Fora de intervalo')
+#     else:
+#          if 0 <= a <= 25:
+#             print('Intervalo [0,25]') 
+                    
+#          elif 25 < a <= 50:  
+#             print('Intervalo (25,50]') 
+          
+#          elif 50 < a <= 75:
+#             print('Intervalo (50,75]') 
+           
+#          else:
+#             print('Intervalo (75,100]') 
+            
+            
+# trintaSete()
