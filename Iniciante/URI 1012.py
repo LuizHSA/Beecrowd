@@ -38,3 +38,39 @@
 #     print(f'DIFERENCA = {a*b-c*d}')
 # sete()    
 
+# def oito():
+#     number, hours, value = int(input()), int(input()), float(input())
+#     print(f'NUMBER = {number}')
+#     print(f'SALARY = U$ {hours*value:.2f}')
+# oito()
+
+# def nove():
+#     nome, salario, vendas = input(), float(input()), float(input())
+#     print(f'TOTAL = R$ {(salario + vendas * 0.15):.2f}')
+# nove()
+
+# def dez():
+#     nome1, num1, valor1 = input().split()
+#     nome2, num2, valor2 = input().split()
+#     num1 = int(num1)
+#     valor1 = float(valor1)
+#     num2 = int(num2)
+#     valor2 = float(valor2)
+#     print(f'VALOR A PAGAR: R$ {(num1*valor1 + num2*valor2):.2f}')
+# dez()
+
+# def onze():
+#     pi= 3.14159
+#     raio = float(input())
+#     print(f'VOLUME = {((4/3)*pi*raio**3):.3f}')
+# onze()    
+
+# def doze():
+#     a, b, c = input().split()
+#     a,b,c = float(a), float(b), float(c)
+#     print(f'TRIANGULO: {a*c/2:.3f}')
+#     print(f'CIRCULO: {3.14159*c**2:.3f}')
+#     print(f'TRAPEZIO: {((a+b)*c)/2:.3f}')
+#     print(f'QUADRADO: {b**2:.3f}') 
+#     print(f'RETANGULO: {a*b:.3f}')
+# doze()
