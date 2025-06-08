@@ -27,3 +27,40 @@ JOIN
   categories AS c ON p.id_categories = c.id
 WHERE
   c.name = 'executive';
+
+2606
+SELECT
+  p.id,
+  p.name
+FROM
+  products AS p
+JOIN 
+  categories AS c ON p.id_categories = c.id
+WHERE
+  c.name LIKE 'super%;
+
+2607
+SELECT city
+FROM providers
+ORDER BY city
+
+2608
+SELECT
+  MAX(price),
+  MIN(price)
+FROM products 
+
+2609
+SELECT
+  c.name,
+  SUM(p.amount) AS sum
+FROM
+  categories AS c
+JOIN
+  products AS p ON c.id = p.id_categories
+GROUP BY
+  c.name
+ORDER BY
+  c.name
+
+2610
