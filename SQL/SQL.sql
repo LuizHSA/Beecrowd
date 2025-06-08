@@ -64,3 +64,59 @@ ORDER BY
   c.name
 
 2610
+SELECT
+    ROUND(AVG(price), 2)
+FROM
+    products;
+
+2611
+SELECT
+    m.id,
+    m.name
+FROM
+    movies AS m
+JOIN
+    genres AS g ON m.id_genres = g.id
+WHERE
+    g.description = 'Action';
+
+2613
+SELECT
+    m.id,
+    m.name
+FROM
+    movies AS m
+JOIN
+    prices AS p ON m.id_prices = p.id
+WHERE
+    p.value < 2
+
+2614
+SELECT
+    c.name,
+    r.rentals_date
+FROM
+    customers AS c
+JOIN
+    rentals AS r ON c.id = r.id_customers
+WHERE
+    r.rentals_date BETWEEN '2016-09-01' AND '2016-09-30';
+
+2615
+SELECT
+    city
+FROM
+    customers
+GROUP BY
+    city
+
+2616
+SELECT
+    c.id,
+    c.name
+FROM
+    customers AS c
+LEFT JOIN
+    locations AS l ON c.id = l.id_customers
+WHERE
+    l.id_customers IS NULL;
