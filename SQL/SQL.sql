@@ -120,3 +120,100 @@ LEFT JOIN
     locations AS l ON c.id = l.id_customers
 WHERE
     l.id_customers IS NULL;
+
+2617
+SELECT
+    p.name,
+    pr.name
+FROM
+    products AS p
+JOIN
+    providers AS pr ON p.id_providers = pr.id
+WHERE
+    pr.name = 'Ajax SA';
+
+2618
+SELECT
+    p.name,
+    pr.name,
+    c.name
+FROM
+    products AS p
+JOIN 
+    providers AS pr ON p.id_providers = pr.id
+JOIN
+    categories AS c ON p.id_categories = c.id
+WHERE
+    pr.name = 'Sansul SA' AND c.name = 'Imported'
+
+2619
+SELECT
+    p.name,
+    pr.name,
+    p.price
+FROM
+    products AS p
+JOIN 
+    providers AS pr ON p.id_providers = pr.id
+JOIN
+    categories AS c ON p.id_categories = c.id
+WHERE
+    p.price > 1000 AND c.name = 'Super Luxury'
+
+2620
+SELECT
+    c.name,
+    o.id
+FROM
+    customers AS c
+JOIN 
+    orders AS o ON c.id = o.id_customers
+WHERE
+    o.orders_date BETWEEN '2016-01-01' AND '2016-06-30'
+
+2621
+SELECT
+    p.name
+FROM
+    products AS p
+JOIN 
+    providers AS pr ON p.id_providers = pr.id
+WHERE
+    p.amount BETWEEN 10 AND 20 AND pr.name LIKE 'P%';
+
+2622
+SELECT
+    c.name
+FROM
+    customers AS c
+JOIN 
+    legal_person AS l ON c.id = l.id_customers
+
+2623
+SELECT
+    p.name,
+    c.name
+FROM
+    products AS p
+JOIN
+    categories AS c ON p.id_categories = c.id
+WHERE
+    p.amount > 100 AND c.id IN (1, 2, 3, 6, 9)
+ORDER BY
+    c.id;
+
+2624
+SELECT 
+    COUNT(DISTINCT city)
+FROM 
+    customers;
+
+2625 -- terminar
+SELECT 
+    n.cpf
+FROM 
+    natural_person AS n
+WHERE 
+    cpf ~ '^\d{3}\.\d{3}\.\d{3}-\d{2}$';
+
+
